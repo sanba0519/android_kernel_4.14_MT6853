@@ -52,7 +52,7 @@ jobs:
     - name: 下载内核源码
       run: |
         cd $GITHUB_WORKSPACE/kernel_workspace
-        git clone -b RKSU --single-branch https://github.com/sanba0519/android_kernel_4.14_MT6853.git android-kernel
+        git clone -b feature/ds --single-branch https://github.com/sanba0519/android_kernel_4.14_MT6853.git android-kernel
         cd android-kernel
 
     - name: 打patch
